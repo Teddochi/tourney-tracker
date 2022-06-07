@@ -12,4 +12,9 @@ export class SportFactory {
       throw "Invalid sport object requested."
     }
   }
+
+  static allSports: string[] = [
+    'Golf',
+    'Melee'
+  ];
 }

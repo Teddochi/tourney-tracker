@@ -30,15 +30,10 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  // Read sports from files
-  let sports: string[] = [
-    'Golf',
-    'Melee'
-  ];
 
   let datesBySport: DatesBySport = {};
 
-  await Promise.all(sports.map(async (sport: string) => {
+  await Promise.all(SportFactory.allSports.map(async (sport: string) => {
     datesBySport[sport] = await getDates(sport);
   }));
 

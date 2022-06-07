@@ -1,5 +1,5 @@
-import { Sport } from "./sport";
-import { parse, HTMLElement } from 'node-html-parser';
+import { Sport } from './sport';
+import { parse } from 'node-html-parser';
 import axios from 'axios';
 
 export class Melee extends Sport {

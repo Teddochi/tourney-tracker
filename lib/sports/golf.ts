@@ -1,4 +1,4 @@
-import { Sport } from "./sport";
+import { Sport } from './sport';
 import { parse, HTMLElement } from 'node-html-parser';
 import axios from 'axios';
 
