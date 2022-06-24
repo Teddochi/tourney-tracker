@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import axios from 'axios';
-import { SportFactory } from '../../lib/sports/sportFactory'
+import { SportFactory } from '../../lib/factories/sportFactory'
 
 async function getDates(sport: string) {
   try {
