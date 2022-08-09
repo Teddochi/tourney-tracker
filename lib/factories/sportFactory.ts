@@ -1,6 +1,6 @@
 import * as sports from '../sports';
 
-const sportMap: any = {};
+const sportMap: Record<string, typeof sports.SportInterface> = {};
 Object.keys(sports).forEach(sportName => {
   if(sportName !== 'Sport') {
     sportMap[sportName] = sports[sportName as keyof typeof sports];
