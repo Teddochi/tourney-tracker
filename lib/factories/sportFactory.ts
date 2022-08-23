@@ -1,9 +1,10 @@
 import * as sports from '../sports';
+import { SportSubclass } from '../sports/sport';
 
-const sportMap: Record<string, typeof sports.SportInterface> = {};
+const sportMap: Record<string, SportSubclass> = {};
 Object.keys(sports).forEach(sportName => {
   if(sportName !== 'Sport') {
-    sportMap[sportName] = sports[sportName as keyof typeof sports];
+    sportMap[sportName] = sports[sportName as keyof SportSubclass];
   }
 });
 

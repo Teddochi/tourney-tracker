@@ -21,13 +21,13 @@ export class Melee extends Sport {
     const root = parse(data);
     let cards : any[] = root.querySelectorAll('.card');
     let dates: string[] = [];
-  
+
     cards.forEach(card => {
       let date: string = card.querySelector('h4')?.text.trim() || '';
-  
+
       dates.push(date);
     });
-  
+
     return dates;
   }
 }
